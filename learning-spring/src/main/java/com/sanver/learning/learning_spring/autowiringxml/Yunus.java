@@ -1,4 +1,4 @@
-package com.sanver.learning.learning_spring;
+package com.sanver.learning.learning_spring.autowiringxml;
 
 import org.springframework.stereotype.Component;
 
