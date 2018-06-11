@@ -1,4 +1,4 @@
-package com.sanver.learning.learning_spring.autowiringxml;
+package component_scanning_java;
 
 import org.springframework.stereotype.Component;
 
