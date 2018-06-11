@@ -1,4 +1,4 @@
-package component_scanning_java;
+package autowiring_java;
 
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
@@ -11,10 +11,10 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @ContextConfiguration(classes = CDPlayerConfig.class)
 public class CDPlayerTest {
 	@Autowired
-	private CompactDisc cd;
+	MediaPlayer player;
 
 	@Test
-	public void cdShouldNotBeNull() {
-		Assertions.assertNotNull(cd);
+	public void playerNotNull() {
+		Assertions.assertNotNull(player);
 	}
 }
