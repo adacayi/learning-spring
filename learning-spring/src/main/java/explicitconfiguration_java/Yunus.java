@@ -1,7 +1,5 @@
 package explicitconfiguration_java;
 
-import org.springframework.stereotype.Component;
-
 public class Yunus implements CompactDisc {
 	private static String artist = "Yunus";
 	private static String title = "Daglar ile";
