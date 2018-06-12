@@ -27,7 +27,7 @@ public class CDPlayerTest {
 		logger.enableLog();
 		player.play();
 		String expected = CDPlayer.play + Yunus.play;
-		String actual = logger.getLog();
+		String actual = logger.getLogWithNormalizedLineSeparator();
 		Assertions.assertEquals(expected, actual);
 	}
 }
