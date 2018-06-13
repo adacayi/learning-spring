@@ -12,7 +12,7 @@ public class CDPlayerConfig {
 	}
 
 	@Bean
-	public MediaPlayer cDPlayer() {
-		return new CDPlayer(yunus());
+	public MediaPlayer cDPlayer(CompactDisc cd) {
+		return new CDPlayer(cd);
 	}
 }
