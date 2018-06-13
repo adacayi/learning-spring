@@ -7,8 +7,11 @@ public class App {
 		try (ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(
 				"explicit_configuration_xml/config.xml")) { // Notice that autowiring does not work. It works when
 															// component scan is defined in xml configuration
-			MediaPlayer player = context.getBean(MediaPlayer.class);
+			MediaPlayer player = (MediaPlayer) context.getBean("cdPlayer");
 			player.play();
+			// To show c-namespace functionality in xml configuration
+			MediaPlayer secondPlayer = (MediaPlayer) context.getBean("mediaPlayerWithc-namespace");
+			secondPlayer.play();
 		}
 	}
 }
