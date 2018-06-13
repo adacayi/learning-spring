@@ -8,6 +8,7 @@
 	<enableImports><![CDATA[false]]></enableImports>
 	<configs>
 		<config>src/main/java/component_scanning_xml/CDPlayerConfig.xml</config>
+		<config>src/main/java/explicit_configuration_xml/config.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
