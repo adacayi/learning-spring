@@ -1,4 +1,4 @@
-package explicitconfiguration_java;
+package explicit_configuration_java;
 
 import org.springframework.beans.factory.annotation.Autowired;
 

@@ -1,4 +1,4 @@
-package explicitconfiguration_java;
+package explicit_configuration_java;
 
 public class Yunus implements CompactDisc {
 	private static String artist = "Yunus";

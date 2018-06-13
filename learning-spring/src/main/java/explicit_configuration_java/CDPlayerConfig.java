@@ -1,4 +1,4 @@
-package explicitconfiguration_java;
+package explicit_configuration_java;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

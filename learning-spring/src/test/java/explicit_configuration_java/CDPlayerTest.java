@@ -1,4 +1,4 @@
-package explicitconfiguration_java;
+package explicit_configuration_java;
 
 import org.junit.Rule;
 import org.junit.Test;
@@ -8,6 +8,11 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import explicit_configuration_java.CDPlayer;
+import explicit_configuration_java.CDPlayerConfig;
+import explicit_configuration_java.MediaPlayer;
+import explicit_configuration_java.Yunus;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = CDPlayerConfig.class)
