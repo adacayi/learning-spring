@@ -9,6 +9,8 @@
 	<configs>
 		<config>src/main/java/component_scanning_xml/CDPlayerConfig.xml</config>
 		<config>src/main/java/explicit_configuration_xml/config.xml</config>
+		<config>src/main/java/joining_configuration_java/mediaPlayerConfig.xml</config>
+		<config>src/main/java/joining_configuration_xml/springConfiguration.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
