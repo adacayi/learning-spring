@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.ImportResource;
 
 @Configuration
-@Import(CompactDiscConfig.class)
-@ImportResource("joining_configuration_java/mediaPlayerConfig.xml")
+@Import(MediaPlayerConfig.class)
+@ImportResource("joining_configuration_java/CompactDiscConfig.xml")
 public class SpringConfiguration {
 }
