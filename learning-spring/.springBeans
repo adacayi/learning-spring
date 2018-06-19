@@ -12,6 +12,7 @@
 		<config>src/main/java/joining_configuration_xml/springConfiguration.xml</config>
 		<config>src/main/java/joining_configuration_java/CompactDiscConfig.xml</config>
 		<config>src/main/java/profile_xml/config.xml</config>
+		<config>src/main/java/autowiring_xml/config.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
