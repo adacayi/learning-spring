@@ -1,4 +1,4 @@
-package profile_java;
+package profile_xml;
 
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
@@ -9,9 +9,9 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = EnvironmentConfig.class)
-@ActiveProfiles("dev")
-public class TestEnvironmentGreeter {
+@ContextConfiguration("config.xml")
+@ActiveProfiles("prod")
+public class EnvironmentGreeterTest {
 
 	@Autowired
 	private Greeter greeter;
@@ -19,7 +19,7 @@ public class TestEnvironmentGreeter {
 	@Test
 	public void devGreeting() {
 		Assertions.assertNotNull(greeter);
-		String expected = "Welcome to Dev\n";
+		String expected = "Welcome to Prod\n";
 		String actual = greeter.greet();
 		Assertions.assertEquals(expected, actual);
 	}
