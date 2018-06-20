@@ -14,6 +14,7 @@
 		<config>src/main/java/profile_xml/config.xml</config>
 		<config>src/main/java/autowiring_xml/config.xml</config>
 		<config>src/main/java/bean_ambiguity_solving_primary_xml/config.xml</config>
+		<config>src/main/java/scope_prototype_xml/config.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
