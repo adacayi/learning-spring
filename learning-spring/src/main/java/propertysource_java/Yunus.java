@@ -1,5 +1,6 @@
 package propertysource_java;
 
+import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -9,12 +10,14 @@ public class Yunus implements CompactDisc {
 	private String title;
 	private int trackCount;
 	private Class<CompactDisc> discClass;
+	private Environment env;
 
-	public Yunus(String artist, String title, int trackCount, Class<CompactDisc> discClass) {
+	public Yunus(String artist, String title, int trackCount, Class<CompactDisc> discClass, Environment env) {
 		this.artist = artist;
 		this.title = title;
 		this.trackCount = trackCount;
 		this.discClass = discClass;
+		this.env = env;
 	}
 
 	@Override
@@ -23,4 +26,7 @@ public class Yunus implements CompactDisc {
 				discClass.getName());
 	}
 
+	public Environment getEnvironment() {
+		return env;
+	}
 }
