@@ -18,7 +18,7 @@ public class App {
 
 			Arrays.asList(env.getActiveProfiles()).forEach(System.out::println);
 
-			if (env.acceptsProfiles("dev"))
+			if (!env.acceptsProfiles("dev"))
 				System.out.println("We do not have dev profile");
 			if (env.acceptsProfiles("prod"))
 				System.out.println("We have prod profile");
