@@ -1,9 +1,7 @@
 package propertysource_java;
 
 import org.springframework.core.env.Environment;
-import org.springframework.stereotype.Component;
 
-@Component
 public class Yunus implements CompactDisc {
 
 	private String artist;
