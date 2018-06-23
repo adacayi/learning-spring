@@ -11,7 +11,6 @@ public class App {
 																		// inserted in every injection and when it is
 																		// called it will get a bean for Yunus.
 			player.play();
-			player = context.getBean(MediaPlayer.class);
 			player.play();
 		}
 	}
