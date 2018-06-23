@@ -10,7 +10,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class App {
 
 	public static void main(String[] args) {
-		System.setProperty("spring.profiles.active", "prod,firstMachine");
 		Properties properties = System.getProperties();
 		try {
 			properties.load(Files.newInputStream(Paths.get("src/main/java/spel_expressions_java/app.properties")));
