@@ -1,4 +1,4 @@
-package aspect.simple_parameterless_aspect;
+package aspect.simple_parameterless_around;
 
 import org.springframework.stereotype.Component;
 
