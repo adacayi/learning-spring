@@ -11,8 +11,7 @@
 		<aop:pointcut id="play"
 			expression="execution(* aspect.xml.simple_parameter_multi.MediaPlayer.play(String,int)) and args(album,track)"></aop:pointcut>
 		<aop:aspect ref="trackCounter">
-			<aop:before pointcut-ref="play" method="countTrack"
-				arg-names="album,track"></aop:before>
+			<aop:before pointcut-ref="play" method="countTrack"></aop:before>
 		</aop:aspect>
 	</aop:config>
 
