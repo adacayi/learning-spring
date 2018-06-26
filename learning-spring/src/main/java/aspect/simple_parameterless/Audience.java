@@ -1,4 +1,4 @@
-package aspect.simple_parameterless_annotations;
+package aspect.simple_parameterless;
 
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.AfterReturning;

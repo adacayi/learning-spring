@@ -1,4 +1,4 @@
-package aspect.simple_parameterless_annotations_xml;
+package aspect.simple_parameterless_xml;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
