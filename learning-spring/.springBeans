@@ -16,6 +16,7 @@
 		<config>src/main/java/bean_ambiguity_solving_primary_xml/config.xml</config>
 		<config>src/main/java/scope_prototype_xml/config.xml</config>
 		<config>src/main/java/spel_expressions_xml/config.xml</config>
+		<config>src/main/java/aspect/xml/simple_parameter_multi/config.xml</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
