@@ -9,7 +9,7 @@ import org.aspectj.lang.annotation.Pointcut;
 
 @Aspect
 public class Audience {
-	@Pointcut("execution(* aspect.simple_parameterless_annotations_xml.Performance.perform(..))")
+	@Pointcut("execution(* aspect.simple_parameterless_xml.Performance.perform(..))")
 	public void perform() {
 
 	}

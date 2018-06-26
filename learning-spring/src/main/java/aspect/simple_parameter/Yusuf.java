@@ -1,4 +1,4 @@
-package aspect.simple_parameter_aspect;
+package aspect.simple_parameter;
 
 import java.util.Arrays;
 import java.util.List;
