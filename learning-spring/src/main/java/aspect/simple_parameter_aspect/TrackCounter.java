@@ -12,7 +12,7 @@ public class TrackCounter {
 
 	Map<Integer, Integer> trackCounts = new HashMap<>();
 
-	@Pointcut("execution(** aspect.simple_parameter_aspect.CompactDisc.playTrack(int)) && args(track)")
+	@Pointcut("execution(* aspect.simple_parameter_aspect.CompactDisc.playTrack(int)) && args(track)")
 	public void trackPlayed(int track) { // The argument name must be the same name with the args designator above
 
 	}

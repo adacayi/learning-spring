@@ -8,6 +8,6 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 	<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
 	<context:component-scan
-		base-package="aspect.simple_parameterless_annotations"></context:component-scan>
-	<bean class="aspect.simple_parameterless_annotations.Audience"></bean>
+		base-package="aspect.simple_parameterless_annotations_xml"></context:component-scan>
+	<bean class="aspect.simple_parameterless_annotations_xml.Audience"></bean>
 </beans>
