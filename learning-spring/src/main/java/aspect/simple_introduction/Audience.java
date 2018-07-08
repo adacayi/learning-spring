@@ -6,7 +6,7 @@ import org.aspectj.lang.annotation.Aspect;
 
 @Aspect
 public class Audience {
-	@Around("execution(* aspect.simple_parameterless_around.Performance.perform(..))")
+	@Around("execution(* aspect.simple_introduction.Performance.perform(..))")
 	public void watchPerformance(ProceedingJoinPoint jp) {
 		System.out.println("Silence your mobile phones");
 		System.out.println("Take your seats\n");
