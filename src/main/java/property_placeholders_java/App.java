@@ -15,7 +15,7 @@ public class App {
 		System.setProperty("spring.profiles.active", "prod,firstMachine");
 		Properties properties = System.getProperties();
 		try {
-			properties.load(Files.newInputStream(Paths.get("src/main/java/property_placeholders_java/app.properties")));
+			properties.load(App.class.getResource("app.properties").openStream());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
