@@ -1,4 +1,4 @@
-package propertysource_java;
+package property_source_java;
 
 import org.springframework.core.env.Environment;
 

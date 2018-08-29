@@ -1,4 +1,4 @@
-package propertysource_java;
+package property_source_java;
 
 import java.util.Arrays;
 
