@@ -7,7 +7,7 @@ public class Yunus implements CompactDisc {
 	private int id;
 	private static int lastId = 1;
 
-	private static Object lockObject = new Object();
+	private static final Object lockObject = new Object();
 
 	public Yunus() {
 		synchronized (lockObject) {
