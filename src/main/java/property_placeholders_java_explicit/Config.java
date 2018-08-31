@@ -7,14 +7,14 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 @Configuration
 public class Config {
-	@Bean
-	public CompactDisc compactDisc(@Value("${disc.artist}") String artist, @Value("${disc.title}") String title,
-			@Value("${disc.trackCount}") String trackCount) {
-		return new Yunus(artist, title, trackCount);
-	}
+    @Bean
+    public CompactDisc compactDisc(@Value("${disc.artist}") String artist, @Value("${disc.title}") String title,
+                                   @Value("${disc.trackCount}") String trackCount, @Value("${disc.size}") double size) {
+        return new Yunus(artist, title, trackCount, size);
+    }
 
-	@Bean
-	public static PropertySourcesPlaceholderConfigurer placeholderConfigurer() {
-		return new PropertySourcesPlaceholderConfigurer();
-	}
+    @Bean
+    public static PropertySourcesPlaceholderConfigurer placeholderConfigurer() {
+        return new PropertySourcesPlaceholderConfigurer();
+    }
 }
