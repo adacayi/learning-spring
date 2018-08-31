@@ -10,13 +10,14 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @EnableAspectJAutoProxy
 public class Config {
 
-	@Bean
-	public Audience audience() {
-		return new Audience();
-	}
+    @Bean
+    public Audience audience() {
+        return new Audience();
+    }
 
-	@Bean
-	public TravellerIntroducer travellerIntroducer() {
-		return new TravellerIntroducer();
-	}
+    @Bean
+    //This has to be defined as bean explicitly here. It gives runtime error when casting if defined as @Component.
+    public TravellerIntroducer travellerIntroducer() {
+        return new TravellerIntroducer();
+    }
 }

@@ -4,6 +4,7 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.DeclareParents;
 
 @Aspect
+//If we add @ComponentScan, this won't help. This has to be defined as bean explicitly in java configuration.
 public class TravellerIntroducer {
 
 	@DeclareParents(value = "aspect.simple_introduction.Performance+", defaultImpl = Traveller.class)
