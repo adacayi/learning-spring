@@ -17,8 +17,7 @@ public class Yunus implements CompactDisc {
 
     public Yunus() {
         synchronized (lockObject) {
-            id = lastId;
-            lastId++;
+            id = lastId++;
         }
     }
 

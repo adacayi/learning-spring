@@ -14,6 +14,7 @@ public class App {
 																		// the same instance of Yunus twice for two
 																		// CdPlayer instances.
 			player.play();
+			player.play();
 			player = context.getBean(MediaPlayer.class);
 			player.play();
 		}
