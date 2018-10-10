@@ -17,6 +17,6 @@ public class Config {
         String discClassName = env.getProperty("disc.class");
         @SuppressWarnings("unchecked")
         Class<?> discClass = Class.forName(discClassName);
-        return new Yunus(artist, title, trackCount, size, discClass, env);
+        return new Yunus(artist, title, trackCount, size, discClass);
     }
 }
