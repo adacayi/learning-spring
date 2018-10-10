@@ -11,9 +11,9 @@ public class Yunus implements CompactDisc {
 
 	public Yunus() {
 		synchronized (lockObject) {
-			id = lastId;
-			lastId++;
+			id = lastId++;
 		}
+		System.out.printf("%d Yunus generated\n", id);
 	}
 
 	@Override
