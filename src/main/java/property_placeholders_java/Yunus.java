@@ -12,10 +12,10 @@ public class Yunus implements CompactDisc {
     private double size;
 
     public Yunus(@Value("${disc.artist}") String artist, @Value("${disc.title}") String title,
-                 @Value("${disc.trackCount}") String trackCount, @Value("${disc.size}") double size) {
+                 @Value("${disc.trackCount}") int trackCount, @Value("${disc.size}") double size) {
         this.artist = artist;
         this.title = title;
-        this.trackCount = Integer.parseInt(trackCount);
+        this.trackCount = trackCount;
         this.size = size;
     }
 
