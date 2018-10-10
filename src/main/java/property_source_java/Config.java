@@ -8,14 +8,15 @@ import org.springframework.core.env.Environment;
 @Configuration
 @PropertySource("classpath:/property_source_java/app.properties")
 public class Config {
-	@Bean
-	public CompactDisc compactDisc(Environment env) throws ClassNotFoundException {
-		String artist = env.getProperty("disc.artist", "No artist");
-		String title = env.getProperty("disc.title", "No title");
-		int trackCount = env.getProperty("disc.trackCount", Integer.class, 0);
-		String discClassName = env.getProperty("disc.class");
-		@SuppressWarnings("unchecked")
-		Class<?> discClass = Class.forName(discClassName);
-		return new Yunus(artist, title, trackCount, discClass, env);
-	}
+    @Bean
+    public CompactDisc compactDisc(Environment env) throws ClassNotFoundException {
+        String artist = env.getProperty("disc.artist", "No artist");
+        String title = env.getProperty("disc.title", "No title");
+        int trackCount = env.getProperty("disc.trackCount", Integer.class, 0);
+        double size = env.getProperty("disc.size", Double.class, 0.);
+        String discClassName = env.getProperty("disc.class");
+        @SuppressWarnings("unchecked")
+        Class<?> discClass = Class.forName(discClassName);
+        return new Yunus(artist, title, trackCount, size, discClass, env);
+    }
 }
