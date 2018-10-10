@@ -1,5 +1,5 @@
 package scope_prototype_java_proxymode;
 
-public interface MediaPlayer {
+public interface Disc {
     void play();
 }
