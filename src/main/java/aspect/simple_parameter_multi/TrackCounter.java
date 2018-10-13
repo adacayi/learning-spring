@@ -19,7 +19,7 @@ public class TrackCounter {
 	@Before("trackPlayed(album,track)")
 	public void countTrack(String album, int track) {
 		if (!trackCounts.containsKey(album))
-			trackCounts.put(album, new HashMap<Integer, Integer>());
+			trackCounts.put(album, new HashMap<>());
 		trackCounts.get(album).put(track, getTrackCount(album, track) + 1);
 		int count = trackCounts.get(album).get(track);
 		System.out.printf("Playing album %s - track %d for " + (count == 1 ? "the first time" : "%d. time") + "\n\t",
