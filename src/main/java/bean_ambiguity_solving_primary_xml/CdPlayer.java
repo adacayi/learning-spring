@@ -1,13 +1,10 @@
 package bean_ambiguity_solving_primary_xml;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 public class CdPlayer implements MediaPlayer {
 
 	private CompactDisc cd;
 
-	@Autowired
-	public void insertDisc(CompactDisc cd) {
+	public void setCd(CompactDisc cd) {
 		this.cd = cd;
 	}
 
