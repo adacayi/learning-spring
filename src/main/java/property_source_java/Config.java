@@ -8,6 +8,7 @@ import org.springframework.core.env.Environment;
 @Configuration
 @PropertySource("classpath:/property_source_java/app.properties")
 public class Config {
+    //PropertySource does not add properties to system properties. Hence we cannot see these properties by env.getSystemProperties();
     @Bean
     public CompactDisc compactDisc(Environment env) throws ClassNotFoundException {
         String artist = env.getProperty("disc.artist", "No artist");
