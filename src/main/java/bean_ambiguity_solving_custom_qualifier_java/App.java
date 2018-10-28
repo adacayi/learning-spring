@@ -1,4 +1,4 @@
-package bean_ambiguity_solving_customqualifier_java;
+package bean_ambiguity_solving_custom_qualifier_java;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

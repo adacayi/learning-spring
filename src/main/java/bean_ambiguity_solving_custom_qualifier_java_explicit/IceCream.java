@@ -1,10 +1,5 @@
-package bean_ambiguity_solving_customqualifier_java;
+package bean_ambiguity_solving_custom_qualifier_java_explicit;
 
-import org.springframework.stereotype.Component;
-
-@Component
-@Cold
-@Creamy
 public class IceCream implements Dessert {
 
 	@Override
