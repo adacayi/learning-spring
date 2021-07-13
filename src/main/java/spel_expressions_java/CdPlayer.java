@@ -17,6 +17,7 @@ public class CdPlayer implements MediaPlayer {
     @Autowired
     public void insertDisc(@Value("#{yunus}") CompactDisc cd, @Value("#{T(System).currentTimeMillis()}") long time) {
         //@Value("#{yunus}") CompactDisc cd makes yunus bean to be injected instead of yansimalar.
+        //@Qualifier("yunus") can also be used for the same purpose.
         this.cd = cd;
         Instant instant = Instant.ofEpochMilli(time);
         moment = instant.atZone(ZoneId.systemDefault()).toLocalDateTime();
